@@ -17,6 +17,7 @@ jobs:
 
 workflows:
     version: 2
+    workflow-name-1:
       jobs:
         - build:
             filters:
