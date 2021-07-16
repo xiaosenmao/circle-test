@@ -9,17 +9,17 @@ jobs:
             - "ed:e3:c7:60:6e:cb:7c:48:b6:11:59:7c:5d:03:e4:01"
       - checkout
       - run:
-        name: Install
-        command: npm run install
+          name: Install
+          command: npm run install
       - run:
-        name: Build
-        command: npm run build
+          name: Build
+          command: npm run build
 
 workflows:
     version: 2
       jobs:
         - build:
-          filters:
-            branches:
-              only:
-                - master
+            filters:
+              branches:
+                only:
+                  - master
